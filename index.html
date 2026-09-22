@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universidad Tecnológica de Software</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            uts: {
+              navy: "#0b1d3a",
+              blue: "#123a6b",
+              gold: "#d4a017",
+              light: "#f4f7fb"
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-24 -left-24 h-80 w-80 rounded-full bg-indigo-500/20 blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-amber-400/10 blur-3xl"></div>
+  </div>
+
+  <main class="relative z-10 flex min-h-screen items-center justify-center px-4 py-12">
+    <div class="w-full max-w-3xl text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-[0.35em] text-amber-300">Portal estudiantil</p>
+      <h1 class="mb-4 text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
+        Universidad Tecnológica<br>
+        <span class="bg-gradient-to-r from-amber-300 to-yellow-200 bg-clip-text text-transparent">de Software</span>
+      </h1>
+      <p class="mx-auto mb-12 max-w-xl text-lg text-slate-300">
+        Consulta tu horario vespertino, calificaciones e información de trámites escolares desde un solo lugar.
+      </p>
+
+      <div class="grid gap-5 sm:grid-cols-1 md:grid-cols-3">
+        <a href="horario.html"
+           class="flex min-h-[140px] items-center justify-center rounded-2xl bg-indigo-600 px-6 py-8 text-xl font-bold shadow-xl shadow-indigo-900/40 transition hover:-translate-y-1 hover:bg-indigo-500 hover:shadow-2xl">
+          Horario
+        </a>
+        <a href="calificaciones.html"
+           class="flex min-h-[140px] items-center justify-center rounded-2xl bg-amber-500 px-6 py-8 text-xl font-bold text-slate-950 shadow-xl shadow-amber-900/30 transition hover:-translate-y-1 hover:bg-amber-400 hover:shadow-2xl">
+          Calificaciones
+        </a>
+        <a href="tramites.html"
+           class="flex min-h-[140px] items-center justify-center rounded-2xl bg-emerald-500 px-6 py-8 text-xl font-bold text-slate-950 shadow-xl shadow-emerald-900/30 transition hover:-translate-y-1 hover:bg-emerald-400 hover:shadow-2xl">
+          Trámites
+        </a>
+      </div>
+
+      <p class="mt-12 text-sm text-slate-400">Ingeniería de Software · Ciclo 2026-2 · Turno vespertino</p>
+    </div>
+  </main>
+</body>
+</html>

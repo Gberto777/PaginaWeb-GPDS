@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horario | Universidad Tecnológica de Software</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-950 via-indigo-950 to-slate-900 text-white">
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute -top-24 -left-24 h-80 w-80 rounded-full bg-indigo-500/20 blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-amber-400/10 blur-3xl"></div>
+  </div>
+
+  <main class="relative z-10 mx-auto max-w-6xl px-4 py-10">
+    <div class="mb-8 text-center">
+      <p class="mb-2 text-sm font-semibold uppercase tracking-[0.35em] text-amber-300">Universidad Tecnológica de Software</p>
+      <h1 class="mb-3 text-4xl font-extrabold">Horario de clases</h1>
+      <p class="text-slate-300">Ingeniería de Software · Turno vespertino · 18:00 a 22:00 hrs</p>
+    </div>
+
+    <div class="mb-8 flex justify-center">
+      <a href="index.html"
+         class="inline-flex min-h-[64px] items-center justify-center rounded-2xl bg-amber-500 px-10 py-4 text-lg font-bold text-slate-950 shadow-xl shadow-amber-900/40 transition hover:-translate-y-0.5 hover:bg-amber-400">
+        Regresar al inicio
+      </a>
+    </div>
+
+    <section class="overflow-hidden rounded-2xl border border-white/10 bg-white/5 shadow-2xl backdrop-blur">
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[720px] text-left text-sm md:text-base">
+          <thead class="bg-indigo-800/80 text-amber-200">
+            <tr>
+              <th class="px-4 py-4 font-semibold">Hora</th>
+              <th class="px-4 py-4 font-semibold">Lunes</th>
+              <th class="px-4 py-4 font-semibold">Martes</th>
+              <th class="px-4 py-4 font-semibold">Miércoles</th>
+              <th class="px-4 py-4 font-semibold">Jueves</th>
+              <th class="px-4 py-4 font-semibold">Viernes</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-white/10">
+            <tr class="hover:bg-white/5">
+              <td class="px-4 py-4 font-semibold text-amber-300">18:00 - 19:00</td>
+              <td class="px-4 py-4">Programación Orientada a Objetos<br><span class="text-xs text-slate-400">Aula B-201</span></td>
+              <td class="px-4 py-4">Bases de Datos<br><span class="text-xs text-slate-400">Lab 3</span></td>
+              <td class="px-4 py-4">Programación Orientada a Objetos<br><span class="text-xs text-slate-400">Aula B-201</span></td>
+              <td class="px-4 py-4">Bases de Datos<br><span class="text-xs text-slate-400">Lab 3</span></td>
+              <td class="px-4 py-4">Arquitectura de Software<br><span class="text-xs text-slate-400">Aula C-110</span></td>
+            </tr>
+            <tr class="hover:bg-white/5">
+              <td class="px-4 py-4 font-semibold text-amber-300">19:00 - 20:00</td>
+              <td class="px-4 py-4">Programación Orientada a Objetos<br><span class="text-xs text-slate-400">Aula B-201</span></td>
+              <td class="px-4 py-4">Bases de Datos<br><span class="text-xs text-slate-400">Lab 3</span></td>
+              <td class="px-4 py-4">Programación Orientada a Objetos<br><span class="text-xs text-slate-400">Aula B-201</span></td>
+              <td class="px-4 py-4">Bases de Datos<br><span class="text-xs text-slate-400">Lab 3</span></td>
+              <td class="px-4 py-4">Arquitectura de Software<br><span class="text-xs text-slate-400">Aula C-110</span></td>
+            </tr>
+            <tr class="hover:bg-white/5">
+              <td class="px-4 py-4 font-semibold text-amber-300">20:00 - 21:00</td>
+              <td class="px-4 py-4">Ingeniería de Requisitos<br><span class="text-xs text-slate-400">Aula A-105</span></td>
+              <td class="px-4 py-4">Pruebas de Software<br><span class="text-xs text-slate-400">Lab 1</span></td>
+              <td class="px-4 py-4">Ingeniería de Requisitos<br><span class="text-xs text-slate-400">Aula A-105</span></td>
+              <td class="px-4 py-4">Pruebas de Software<br><span class="text-xs text-slate-400">Lab 1</span></td>
+              <td class="px-4 py-4">Calidad de Software<br><span class="text-xs text-slate-400">Aula C-110</span></td>
+            </tr>
+            <tr class="hover:bg-white/5">
+              <td class="px-4 py-4 font-semibold text-amber-300">21:00 - 22:00</td>
+              <td class="px-4 py-4">Ingeniería de Requisitos<br><span class="text-xs text-slate-400">Aula A-105</span></td>
+              <td class="px-4 py-4">Pruebas de Software<br><span class="text-xs text-slate-400">Lab 1</span></td>
+              <td class="px-4 py-4">Ingeniería de Requisitos<br><span class="text-xs text-slate-400">Aula A-105</span></td>
+              <td class="px-4 py-4">Pruebas de Software<br><span class="text-xs text-slate-400">Lab 1</span></td>
+              <td class="px-4 py-4">Calidad de Software<br><span class="text-xs text-slate-400">Aula C-110</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
